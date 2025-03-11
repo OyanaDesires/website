@@ -1,0 +1,154 @@
+/* Resetando o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin-top: 180px; /* Ajusta para o espaço onde o cabeçalho fica quando fixo */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o cabeçalho fique sobre o conteúdo */
+    transition: visibility 0.3s ease-in-out;
+}
+
+header .logo img {
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Seções do site */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: rgb(36, 36, 36);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Links de download */
+#download ul {
+    list-style: none;
+    padding: 0;
+}
+
+#download ul li {
+    margin-bottom: 10px;
+}
+
+#download ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#download ul li a:hover {
+    background-color: #005f72;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 40px;
+}
+
+
+section#sobre {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+section#sobre h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #ff4081; /* Altere a cor se quiser */
+}
+
+section#sobre p {
+    font-size: 18px;
+    color: #fff; /* Mantém a fonte branca */
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+section#sobre img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px; /* Deixa a imagem com cantos arredondados */
+}
+
+#paginainicial img {
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+section#paginainicial p {
+    font-size: 18px;
+    color: #fff; /* Mantém a fonte branca */
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+section#paginainicial h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #ff4081; /* Altere a cor se quiser */
+}
+
+
