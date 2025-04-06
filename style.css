@@ -1,0 +1,292 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* --------------Reset do css------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; 
+    box-sizing: border-box;
+    font-family: 'Nunito', serif;;
+    color: rgb(211, 211, 211);
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    padding: 0.2% 0%;
+    /* background-color: #1b2937; */
+    background-image: linear-gradient(135deg, #090a0f 0%, #323857 90%);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* textos de navegacao*/
+a{
+    color:#e3e9ec;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.lista a:hover{
+    opacity: 0.7;
+}
+
+/*barra de navegaçao num geral*/
+nav{
+    display: flex;
+    /*margin: 0 30px 0 30px;*/
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: #333e47;
+}
+
+main{
+    height: 92vh;
+}
+/* lista da barra de navegação*/
+.lista{
+    list-style: none;
+    display: flex;
+}
+
+.lista li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+@media (max-width: 999px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .lista{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+    }    
+
+    .lista li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .menu{
+        display: block;
+
+    }
+}
+
+.lista.active{
+    transform: translateX(0);
+}
+
+/* logo na barra de navegação*/
+.logo img{
+    margin-top: 10%;
+    height: 9vh;
+    width: 32vh;
+    rotate: -2deg;
+}
+/* o hamburg*/
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu div{
+    width: 29px;
+    height: 2px;
+    background:#fff;
+    margin:8px;
+}
+
+.baner{
+    width: 100%;
+    height: 30vh;
+    background-image: url(https://raw.githubusercontent.com/OyanaDesires/website/main/images/bannermedidas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+}
+
+.download{
+    width: 85%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin: 0 auto;
+    
+}
+
+.download > div{
+    display: flex;
+    /*background-color: #476794;*/
+    background-image: linear-gradient(90deg,rgb(48, 55, 92), #3f4562 90%);
+    width: 100%;
+    max-width: 470px;
+    height: 50vh;
+    min-height: 470px;
+    margin: 20px;
+    border-radius: 10px; 
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgb(1, 6, 31,.5); 
+    opacity: 0.8;
+}
+
+.download > div:hover{
+    opacity: 1;
+    transition: 0.2s;
+
+}
+
+.download h1{
+    font-size: 2.5em;
+    margin: 5px;
+}
+
+.download h2{
+    margin: 15px 0px 30% 0px;
+    font-size: 1.5em;
+    color: #c8e9f7;
+    
+}
+
+.botao{
+    font-size: larger;
+    margin: 10px;
+    height: 10vh;
+    width: 35vh;
+    color: white;
+    border-radius: 2vh;
+    background-color: #555b7a;
+}
+
+.botao:hover{
+    background-color: rgb(43, 209, 145);
+    opacity: 100%;
+    transition-duration: 0.2s;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background-color: #16171d;
+    
+}
+
+.patron-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #88493E; /* Cor de fundo do botão */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s;
+    width: 38vh;
+    margin: 0px 4px 8px 10px;
+    opacity: 0.8;
+    min-height: 35px;
+    height: 5vh;
+    min-width: 250px;
+}
+
+.patron-button:hover {
+    background-color: #723b33; /* Cor ao passar o mouse */
+}
+
+.patron-button img {
+    height: 3vh; /* Ajusta a altura do logo */
+    margin-right: 10px;
+}
+
+.discord-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #5966ec; /* Cor de fundo do botão */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 2% 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s;
+    width: 38vh;
+    opacity: 0.8;
+    margin-left: 10px;
+    min-height: 35px;
+    height: 5vh;
+    min-width: 250px;
+}
+
+.discord-button:hover {
+    background-color: #4752C4; /* Cor ao passar o mouse */
+}
+
+.discord-button img {
+    height: 3vh; /* Ajusta a altura do logo */
+    margin-right: 10px;
+}
+
+
