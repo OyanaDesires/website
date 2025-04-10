@@ -120,10 +120,9 @@ main{
 
 /* logo na barra de navegação*/
 .logo img{
-    margin-top: 10%;
+    margin-top: 2%;
     height: 9vh;
-    width: 32vh;
-    rotate: -2deg;
+    width: 38vh;
 }
 /* o hamburg*/
 .menu{
