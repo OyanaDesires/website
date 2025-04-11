@@ -75,7 +75,7 @@ nav{
 }
 
 main{
-    height: 92vh;
+    min-height: 92vh;
 }
 /* lista da barra de navegação*/
 .lista{
@@ -288,4 +288,62 @@ footer {
     margin-right: 10px;
 }
 
+@media (max-width: 768px) {
+    .container {
+      padding: 10px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .logo {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    body {
+      font-size: 16px;
+    }
+  }
 
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .download {
+      margin-bottom: 10px; /* empurra o footer pra baixo no celular */
+    }
+  
+    footer {
+      position: relative; /* Garante que o footer fique fixo abaixo do conteúdo */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .baner {
+      background-image: url('https://raw.githubusercontent.com/OyanaDesires/website/main/images/bannermedidasmobile.png');
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .patron-button {
+      margin-top: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .discord-button {
+      margin-top: 0px;
+    }
+  }
