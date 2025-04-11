@@ -2,16 +2,31 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KXR0JR2XPE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'G-KXR0JR2XPE');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Oyana 愛 Desires</title>
+
+    <title>Oyana Desires | Beta Life Visual Novel</title>
+    <meta name="description" content="Site oficial do estúdio Oyana Desires. Conheça nossa visual novel adulta: Beta Life. Disponível em breve.">
+    <meta name="keywords" content="free game, keyla, jane, jimmy, biggie, macaco bunda, dicria, mano dicria, dikson, buxa, faggot, oyana, desires, oyana desires, beta desires, oyana game, beta life, beta game, life game, Oyana Desires, Beta Life, visual novel, Ren'Py, jogo adulto, romance interativo, novela visual, jogo 18+">
+    <meta name="author" content="Oyana Desires">
+    <meta name="robots" content="index, follow">
 
     <!-- Favicon -->
     <link rel="icon" href="https://raw.githubusercontent.com/OyanaDesires/website/main/images/faviconvetor.svg" type="image/svg+xml">
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body>   
     <!-- Cabeçalho do site -->
     <header>
         <nav>
@@ -77,5 +92,21 @@
         <p>© 2025 Oyana 愛 Desires. All Rights Reserved.</p>
         </div>
     </footer>
-</body>
+
+    <!-- Rastreio de downloads -->
+    <script>
+      const downloadLinks = document.querySelectorAll('a[href*="mediafire.com"], a[href*="drive.google.com"]');
+      downloadLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          const label = link.href.includes('apk') ? 'Android' : 'PC';
+          const source = link.href.includes('drive') ? 'Google Drive' : 'Mediafire';
+          gtag('event', 'download', {
+            'event_category': 'Download',
+            'event_label': `${label} - ${source}`,
+            'value': 1
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
