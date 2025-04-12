@@ -101,11 +101,17 @@ main{
         flex-direction: column;
         align-items: center;
         transform: translateX(100%);
+      
     }    
 
     .lista li{
         margin-left: 0;
         opacity: 0;
+    }
+
+    .lista a{
+        min-width: 0px;
+
     }
 
     .menu{
@@ -289,6 +295,19 @@ footer {
 }
 
 @media (max-width: 768px) {
+    
+    /*retirando a lista para evitar ma otimização no celular*/
+    .lista {
+        position: fixed;
+        width: 0px;
+        
+    }
+
+    .lista a {
+        background-color: red;
+        margin-left: 0px;
+    }
+
     .container {
       padding: 10px;
       flex-direction: column;
@@ -320,7 +339,7 @@ footer {
 
   @media (max-width: 768px) {
     .download {
-      margin-bottom: 10px; /* empurra o footer pra baixo no celular */
+      margin: 4px; /* empurra o footer pra baixo no celular */
     }
   
     footer {
