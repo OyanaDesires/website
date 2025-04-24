@@ -159,7 +159,7 @@ main{
 .baner2{
     width: 100%;
     height: 30vh;
-    background-image: url(https://raw.githubusercontent.com/OyanaDesires/website/main/images/banner2.png);
+    background-image: url(https://raw.githubusercontent.com/OyanaDesires/website/main/images/banner2about.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -370,7 +370,7 @@ footer {
 
   @media (max-width: 768px) {
     .baner2 {
-      background-image: url('https://raw.githubusercontent.com/OyanaDesires/website/main/images/banner2mobile.png');
+      background-image: url('https://raw.githubusercontent.com/OyanaDesires/website/main/images/banner2mobileabout.png');
       background-position: center center;
       background-size: cover;
     }
